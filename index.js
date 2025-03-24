@@ -63,17 +63,17 @@ console.log(deleteFromEmployeeByKey(employee, 'name'))
 console.log(employee)
 
 //destructivelyDeleteFromEmployeeByKey(): this function should work the same 
-// as deleteFromEmployeeByKey() but it should mutate the employee Object.
+//as deleteFromEmployeeByKey() but it should mutate the employee Object.
 
 
-function destructivelyDeleteFromEmployeeByKey(employee, key){
 
-    delete employee.key
 
-    return employee
 
+function destructivelyDeleteFromEmployeeByKey(employee, key)
+{
+
+  delete employee[key]
+  return employee
 }
 
-console.log(destructivelyUpdateEmployeeWithKeyAndValue(employee, 'name'))
-
-console.log(employee)
+console.log(destructivelyDeleteFromEmployeeByKey(employee, 'name'))
